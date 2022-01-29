@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5a21e208fd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+        <nav>
+            <div id= "container">
+                <div id="logo">
+                    <i class="fab fa-airbnb"></i><span class = "hide-on-phone">Airbnb</span>
+                </div>
+                <div id="link">
+                    <a href="#">Payment </a>
+                    <a href="#">Contact</a>
+                </div>
+                <div id="profile"><span class = "hide-on-phone">Become A Host</span>
+                    <div class="user-around"><i class="fas fa-bars"></i>
+                    <i class="far fa-user-circle"></i></div>
+                </div>
+            </div>
+        </nav>
+        <section id="search-bar">
+            <div class = "search-option">
+                <span>Location</span><span></span>
+            </div>
+            <div class = "search-option">
+                <span>Check-IN</span><span></span>
+            </div>
+            <div class = "search-option">
+                <span>Check-OUT</span><span></span>
+            </div>
+            <div class = "search-option">
+                <span>Guests</span><span><i class="fas fa-search"></i></span>
+            </div>
+        </section>
+        <section>
+        <div id="main-screen">
+            <h1>
+                Find Some Places
+            </h1>
+            <button id="action-button">
+                I'm Flexible
+            </button>
+        </div>
+    </section>
+    <section class="container" id="location-container">
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://a0.muscache.com/im/pictures/0538dab4-a0fc-4035-b6b2-40fa3532ee7b.jpg?im_w=480" width=288px class="card-img-top" alt="...">
+                        <div class="card-body location-desc">
+                            <h1>Gujarat</h1>
+                            <span>556 Miles</span>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://a0.muscache.com/im/pictures/9fb3e0bc-29ad-41cf-823d-30e2ff583753.jpg?im_w=480" width=288px class="card-img-top" alt="...">
+                        <div class="card-body location-desc">
+                            <h1>Gujarat</h1>
+                            <span>556 Miles</span>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://a0.muscache.com/im/pictures/0d4ae5be-37d9-400c-917a-de52a034fe4c.jpg?im_w=480" width=288px class="card-img-top" alt="...">
+                        <div class="card-body location-desc">
+                            <h1>Gujarat</h1>
+                            <span>556 Miles</span>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://a0.muscache.com/im/pictures/73250991-433e-4950-b7d1-59bba711bb57.jpg?im_w=480" width=288px class="card-img-top" alt="...">
+                        <div class="card-body location-desc">
+                            <h1>Gujarat</h1>
+                            <span>556 Miles</span>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+    </section>
+</body>
+</html>
+-----------------------------------------------------------------------------------------------
+
+body{
+    margin:0px;
+    background: linear-gradient(to right, #d3959b, #bfe6ba); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+#container{
+    width:100%;
+    display:flex;
+    justify-content: space-around; 
+    height : 12vh;
+    background-color: antiquewhite;
+    font-size: 1.5rem;
+    align-items : center;
+}
+#link{
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+}
+#link > a{
+    text-decoration: none;
+    color: orange;
+}
+.user-around{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    width : 60px;
+    height : 25px;
+    color : red;
+    border-radius: 20px;
+    padding : 6px;
+    margin-left: 10px;
+}
+#profile{
+    display: flex;
+}
+#search-bar{
+    background-color: white;
+    height: 50px;
+    width : 80%;
+    margin : auto;
+    margin-top : 1rem;
+    border-radius : 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.search-option{
+    width : 15%;
+    height : 40px;
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    border-left : 2px solid black;
+    cursor : pointer;
+}
+.fa-search{
+    margin-left : 15px;
+    font-size: 30px;
+    color : red;
+}
+
+@media screen and (max-width : 576px) {
+    .hide-on-phone{
+        display: none;
+    }
+}
+#main-screen{
+    margin-top : 1px;
+    background-image: url("bnb.webp");
+    background-size : cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    height : 75vh;
+    display: flex; 
+    justify-content: flex-end;
+    flex-direction: column; 
+    align-items: center;
+    color : whitesmoke;
+}
+#action-button{
+    height : 40px;
+    width : 100px;
+    border-radius: 20px;
+    color : gray;
+    font-weight : 700;
+    font-size: 0.9rem;
+    cursor : pointer;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.col{
+    background-color: #DE3151;
+    margin  : 20px;
+    border-radius : 20px;
+}
+#location-container{
+    margin-top : 3rem;
+    display: flex;
+    justify-content: center;
+    align-items : center;
+}
+h1 { 
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+}

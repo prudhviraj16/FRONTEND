@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href = "#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>
+                Main Story
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto velit quos, est sit, labore ullam excepturi ipsum quas eum rerum animi laborum suscipit enim consequatur eligendi, reprehenderit assumenda optio odio magni tenetur. Veniam maiores rem error cum earum explicabo rerum, consequatur culpa. Id, recusandae a ab in cupiditate voluptas fuga ipsam sunt, facilis officiis, blanditiis amet quod consequatur provident libero architecto beatae minima eveniet. Iste, fugit doloremque aliquam in aperiam rerum. Quisquam eaque laboriosam voluptates optio veritatis perspiciatis quo ab deserunt sit earum. Corrupti, distinctio reprehenderit quod nobis facilis ratione culpa similique ducimus? Voluptatum, similique placeat. Obcaecati exercitationem alias eos voluptatibus maxime earum rem qui? Ducimus debitis ad magni dolorum modi ipsum consectetur, sed quidem mollitia amet aspernatur adipisci molestiae corporis expedita omnis. Voluptatem, modi. Distinctio odit, porro nobis sapiente eum consequatur reiciendis, alias officia itaque non iure. Veritatis nisi molestiae repudiandae quas eveniet sapiente ab consequatur tenetur quia eos.
+            </p>
+        </article>
+        <article>
+            <h2>
+                Another Story
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque totam ratione nisi sed aliquid debitis nobis. Earum accusamus reprehenderit, aperiam velit ipsum laborum distinctio omnis laboriosam laudantium ex! Laudantium, iusto magni! Deserunt nulla et consequuntur minima, distinctio numquam, eaque sint impedit pariatur facilis earum aperiam amet ipsam nam laudantium ab!
+            </p>
+        </article>
+    </main>
+</body>
+</html>
+
+
+---------------------------------------------------------------
+
+body{
+    margin : 0px;
+    font-family: 'Roboto', sans-serif;}
+nav{
+    background-color: lightcoral;
+    animation : nav-load 500ms ease-in ;
+}
+nav ul{
+    margin : 0px;
+    display: flex;
+    justify-content: center;
+
+}
+nav li {
+    padding : 10px;
+    margin : 0 10px;
+    list-style: none;
+    animation : nav-link-load 500ms ease-in 50ms forwards;
+}
+nav li:first-child{
+    animation-name: nav-first-link-load;
+}
+nav li:hover{
+    background-color: #FFFFFF44;
+}
+nav li:last-child{
+    animation-name: nav-last-link-load;
+}
+nav a { 
+    text-decoration: none;
+    font-size: 20px;
+}
+h2{
+    animation : article-load 300ms ease-in-out 100ms;
+}
+p{
+    animation : article-load 300ms ease-in-out 300ms;
+}
+@keyframes nav-load {
+        0%{
+            transform: translateY(-100%);
+        }
+        100%{
+            transform: translateY(0%);
+        }
+}
+@keyframes nav-link-load {
+    0%{
+        transform: scale(0);
+    }
+    90%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes nav-first-link-load {
+    0% {
+      transform: translateX(-1000%);
+    }
+  
+    90% {
+      transform: translateX(50%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  @keyframes nav-last-link-load {
+    0% {
+      transform: translateX(1000%);
+    }
+  
+    90% {
+      transform: translateX(-50%);
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+  }
+  @keyframes article-load {
+      0%{
+          transform: translateY(-20%);
+          opacity:0
+      }
+      100%{
+          transform: translateY(0%);
+          opacity : 1;
+      }
+  }

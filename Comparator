@@ -1,0 +1,9 @@
+x.compareTo(y)
+-ve value : if(x<y) - x should appear first
++ve value : if(x>y) - x should appear second
+zero if x==y
+
+y.compareTo(x)
+-ve value : if(y<x) - y should appear first
++ve value : if(y>x) - y should appear second
+zero if x==y

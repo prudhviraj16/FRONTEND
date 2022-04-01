@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Roboto+Condensed:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Website Styling Challenge</title>
+</head>
+<body>
+    <div>
+        <img src="img/img-1.jpg" alt="">
+        <ul id="navmenu">
+        <li><a href="#">Hyperlink 1</a></li>
+        <li><a href="#">Hyperlink 2</a>
+            <ul id="sub1"> 
+                <li><a href="#">Hyperlink 2.1</a></li>
+                <li><a href="#">Hyperlink 2.2</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Hyperlink 3</a></li>
+        <li><a href="#">Hyperlink 4</a></li>
+        </ul>
+    </div>
+</body>
+</html>
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+
+*{
+  margin: 0;
+  padding: 0;
+
+}
+div{
+  display: flex;
+  background-color: steelblue;
+}
+#navmenu{
+  display: flex;
+  justify-content: flex-end;
+  margin-right :20px;
+  background: steelblue;
+  height :50px;
+  width: 100%;
+  line-height: 50px;
+}
+li ul{
+  display:none;
+  position :absolute;
+  transition: all 0.5s;
+}
+
+li:hover ul{
+  display:block;
+  color : black;
+  background-color: green;
+  animation : fadein 0.5s;
+}
+li{
+  list-style: none;
+  text-transform: uppercase;
+  margin : 0 10px;
+}
+a{
+  text-decoration: none;
+  color : blue;
+}
+img{
+  height: 50px;
+  width: 50px;
+  margin-left: 30px;
+  border-radius: 50%;
+  line-height: 50px;
+}
+@keyframes fadein{
+  from{
+    opacity: 0;
+
+  }
+  to {
+    opacity:1
+  }
+}
